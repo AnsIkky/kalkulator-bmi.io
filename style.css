@@ -19,6 +19,15 @@ font-family: 'Lugrasimo', cursive;
 font-family: 'Rubik', sans-serif;
 */
 
+:root {
+  --primary: #815718;
+  --secondary: #f4f7d4;
+  --accent: #d73a28;
+  --bg: #fafafa;
+  --bgAlt: #c2bab0;
+  --text: #050505;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -28,7 +37,7 @@ body {
   font-size: 1.15rem;
   font-family: 'Lora', serif;
   font-weight: bold;
-  background-color: #fafafa;
+  background-color: var(--bg);
 }
 
 .container {
@@ -39,6 +48,11 @@ body {
   border-radius: 10px;
 }
 
+
+
+
+
+/* HEADER SEC. START */
 header {
   width: 100%;
   padding: 20px;
@@ -48,7 +62,7 @@ header {
 header h1 {
   font-family: 'Lugrasimo', cursive;
   font-size: 2.3em;
-  color: #d73a28;
+  color: var(--accent);
   text-align: center;
 }
 
@@ -57,10 +71,37 @@ header p {
   text-align: justify;
   line-height: 25px;
 }
+/* HEADER SEC. FINISH */
+
+
+
+
+
+/* SUB HEADING SEC. START */
+.formDetail h3,
+.resultCorner h2,
+.resultInfo h3,
+.info h3,
+footer h2 {
+  font-family: 'Lugrasimo', cursive;
+  color: var(--accent);
+  margin-top: 10px;
+}
+/* SUB HEADING SEC. FINISH */
+
+
+
+
+
+/* FORM SEC. START */
+.formCorner {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
 
 form {
-  background-color: #c2bab0;
-  margin: 20px;
+  background-color: var(--bgAlt);
   padding: 10px;
   border-radius: 10px;
 }
@@ -69,12 +110,12 @@ form {
 form input[type=radio] {
   width: auto;
   height: auto;
-  accent-color: #d73a28;
+  accent-color: var(--accent);
 }
 
 .input_container {
   display: flex;
-  background-color: #fafafa;
+  background-color: var(--bg);
   width: 100%;
   height: 30px;
   align-items: center;
@@ -92,32 +133,136 @@ form input {
 
 form label.icon {
   padding-left: 5px;
-  color: #815718;
+  color: var(--primary);
 }
 
-form .button_container {
+.formDetail {
+  padding: 20px;
+}
+
+.formDetail ol,
+.formDetail p,
+.resultInfo p {
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.formDetail p {
+  text-indent: 25px;
+}
+/* FORM SEC. FINISH */
+
+
+
+
+
+/* BUTTON SEC. START */
+.button_container {
   width: 100%;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 
-form button[type=submit] {
-  background-color: #815718;
-  color: #fafafa;
+form button[type=submit],
+.consult {
+  width: 50%;
+  background-color: var(--primary);
+  color: var(--bg);
   font-family: 'Rubik', sans-serif;
   border: none;
   border-radius: 10px;
   font-size: 1.3em;
   padding: 10px;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, .5);
 }
 
-form button[type=reset] {
-  background-color: #f4f7d4;
-  color: #050505;
+.consult {
+  width: auto;
+}
+
+.reg {
+  height: 100%;
+}
+
+form button[type=submit]:hover,
+.consult:hover {
+  cursor: pointer;
+  background-color: #c6954c;
+}
+
+form button[type=reset],
+.reg {
+  background-color: var(--secondary);
+  color: var(--text);
   font-family: 'Rubik', sans-serif;
   border: none;
   border-radius: 10px;
   font-size: 1.3em;
   padding: 10px;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, .5);
 }
+
+form button[type=reset]:hover,
+.reg:hover {
+  cursor: pointer;
+  background-color: #c9cf85;
+}
+/* BUTTON SEC. FINISH */
+
+
+
+
+
+/* RESULTINFO SEC. START */
+.resultCorner {
+  padding: 20px;
+}
+
+.resultData {
+  background-color: var(--bgAlt);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+/* RESULTINFO SEC. FINISH */
+
+
+
+
+
+/* INFO SEC. START */
+.info {
+  background-color: aquamarine;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.info p {
+  text-indent: 25px;
+  text-align: justify;
+  margin: 10px 0;
+}
+
+.info h3{
+  text-align: center;
+}
+
+.info ul li {
+  list-style-type: none;
+  text-align: center;
+}
+/* INFO SEC. FINISH */
+
+
+
+/* FOOTER SEC. START */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* FOOTER SEC. FINISH */
