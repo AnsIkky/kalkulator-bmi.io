@@ -34,7 +34,7 @@ font-family: 'Rubik', sans-serif;
 }
 
 body {
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-family: 'Lora', serif;
   font-weight: bold;
   background-color: var(--bg);
@@ -218,13 +218,29 @@ form button[type=reset]:hover,
 
 /* RESULTINFO SEC. START */
 .resultCorner {
+  /* background-color: aqua; */
   padding: 20px;
+  padding-top: 0;
 }
 
 .resultData {
+  display: flex;
+  height: 200px;
   background-color: var(--bgAlt);
   border-radius: 10px;
   margin-bottom: 10px;
+  justify-content: space-evenly;
+}
+
+.resultData .resultDataText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.resultData .resultDataText p {
+  font-size: 3.5em;
 }
 /* RESULTINFO SEC. FINISH */
 
@@ -265,4 +281,56 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
+footer .footerImg {
+  display: flex;
+  justify-content: center;
+}
+
+footer img {
+  width: 50px;
+  margin: 50px;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+footer img:hover {
+  cursor: pointer;
+  background-color: #c1c1c1;
+}
 /* FOOTER SEC. FINISH */
+
+
+
+
+
+/* GRID POSITION START */
+.container {
+  display: grid;
+  grid-template-areas:
+                  "header header"
+                  "form result"
+                  "info info"
+                  "foot foot"
+}
+
+header {
+  grid-area: header;
+}
+
+.formCorner {
+  grid-area: form;
+}
+
+.resultCorner {
+  grid-area: result;
+}
+
+.info {
+  grid-area: info;
+}
+
+footer {
+  grid-area: foot;
+}
+/* GRID POSITION FINISH */
