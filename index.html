@@ -5,27 +5,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- Link google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Lugrasimo&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <header>
       <h1>Kalkulator BMI</h1>
+      <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.</p>
     </header>
 
     <section class="formCorner">
-      <h2>Bagian formulir</h2>
+      <form action="">
+        <p>Jenis Kelamin</p>
+        <input type="radio" id="pria" name="jenis_kelamin" value="pria">
+        <label for="pria">Pria</label>
+        <input type="radio" id="wanita" name="jenis_kelamin" value="wanita">
+        <label for="wanita">Wanita</label>
+
+        <br><br>
+
+        <label for="bWeight">Berat Badan (kg)</label><br>
+        <span>🖍</span>
+        <input type="number" id="bWeight">
+
+        <br><br>
+
+        <label for="age">Usia (tahun)</label><br>
+        <span>🖍</span>
+        <input type="number" id="age">
+
+        <br><br>
+
+        <label for="bHeight">Tinggi badan (cm)</label><br>
+        <span>🖍</span>
+        <input type="number" id="bHeight">
+
+        <br><br><br>
+
+        <button type="submit">Hitung BMI</button>
+        <button type="reset">Reset</button>
+      </form>
+
+      <h3>Keunggulan fitur</h3>
+      <ol>
+        <li>Menghitung berat badan</li>
+        <li>Menentukan kategori berat badan ideal atau tidak</li>
+        <li>Mempersiapkan program penurunan berat badan</li>
+      </ol>
+
+      <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.</p>
+
+      <p>Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M<sup>2</sup>.</p>
     </section>
 
     <section class="resultCorner">
-      <h2>Hasil timbangan</h2>
+      <h2>Hasil</h2>
+      <img src="assets/img/happy/03.png" alt="hasil_bmi">
+
+      <div class="hasil_info">
+        <h3>Hasil BMI diantara 23 dan 25</h3>
+        <p>Anda berada dalam kategori overweight atau berat badan berlebih.</p>
+        <p>Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalori makanan yang dikonsumsi dan berolahraga.</p>
+        <p>Jika BMI anda berada dalam kategori ini maka Anda dianjurkan untuk menurunkan berat badan hingga batas normal.</p>
+      </div>
+
+      <button>Konsultasi Ahli Gizi Via Aplikasi</button>
+      <button>Registrasi Online Ahli Gizi</button>
     </section>
 
     <section class="info">
-      <h2>Info yang dihasilkan</h2>
+      <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.</p>
+      <div class="deseaseList">
+        <h3>Beberapa penyakit yang berasal dari kegemukan</h3>
+        <ul>
+          <li>Diabetes</li>
+          <li>Hipertensi</li>
+          <li>Sakit Jantung</li>
+          <li>Osteoarthritis</li>
+        </ul>
+
+        <button>Konsultasi Dokter Via Aplikasi</button>
+        <button>Registrasi Online Sekarang</button>
+      </div>
     </section>
 
     <footer>
-      <h2>ini adalah bagian footer</h2>
+      <h2>Download Aplikasi</h2>
+      <img src="assets/img/sad/01.png" alt="google_play">
+      <img src="assets/img/sad/02.png" alt="app_store">
     </footer>
   </div>
 </body>
