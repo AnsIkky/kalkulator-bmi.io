@@ -250,10 +250,10 @@ form button[type=reset]:hover,
 
 /* INFO SEC. START */
 .info {
-  background-color: aquamarine;
-  width: 100%;
+  background-color: var(--bgAlt);
+  margin: 20px;
   padding: 20px;
-  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .info p {

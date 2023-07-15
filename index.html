@@ -20,8 +20,8 @@
 
     <section class="formCorner">
       <form action="">
-        <p>Jenis Kelamin</p>
-        <input type="radio" id="pria" name="jenis_kelamin" value="pria">
+        <p>Jenis Kelamin (pilih salah satu)</p>
+        <input type="radio" id="pria" name="jenis_kelamin" value="pria" checked>
         <label for="pria">Pria</label>
         <input type="radio" id="wanita" name="jenis_kelamin" value="wanita">
         <label for="wanita">Wanita</label>
@@ -31,7 +31,7 @@
         <label for="bWeight">Berat Badan (kg)</label><br>
         <div class="input_container">
           <label for="bWeight" class="icon">🖍</label>
-          <input type="number" id="bWeight">
+          <input type="number" id="bWeight" min="0" max="300" required>
         </div>
 
         <br><br>
@@ -39,7 +39,7 @@
         <label for="age">Usia (tahun)</label><br>
         <div class="input_container">
           <label for="age" class="icon">🖍</label>
-          <input type="number" id="age">
+          <input type="number" id="age" min="10" max="150" required>
         </div>
 
         <br><br>
@@ -47,7 +47,7 @@
         <label for="bHeight">Tinggi badan (cm)</label><br>
         <div class="input_container">
           <label for="bHeight" class="icon">🖍</label>
-          <input type="number" id="bHeight">
+          <input type="number" id="bHeight" min="100" max="300" required>
         </div>
 
         <br><br>
