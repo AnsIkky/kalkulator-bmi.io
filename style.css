@@ -225,6 +225,7 @@ form button[type=reset]:hover,
 
 .resultData {
   display: flex;
+  flex-direction: row-reverse;
   height: 200px;
   background-color: var(--bgAlt);
   border-radius: 10px;
@@ -237,6 +238,7 @@ form button[type=reset]:hover,
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
 }
 
 .resultData .resultDataText p {

@@ -19,7 +19,7 @@
     </header>
 
     <section class="formCorner">
-      <form action="">
+      <form action="" method="get">
         <p>Jenis Kelamin (pilih salah satu)</p>
         <input type="radio" id="pria" name="jenis_kelamin" value="pria" checked>
         <label for="pria">Pria</label>
@@ -53,8 +53,8 @@
         <br><br>
         
         <div class="button_container">
-          <button type="submit">Hitung BMI</button>
-          <button type="reset">Reset</button>
+          <button type="submit" id="calcBtn">Hitung BMI</button>
+          <button type="reset" id="resBtn">Reset</button>
         </div>
       </form>
 
@@ -77,7 +77,7 @@
       <div class="resultData">
         <div class="resultDataText">
           <h3>Disini akan ditampilkan index BMI anda</h3>
-          <p>0.0</p>
+          <p id="bmiResult">0.0</p>
           <h4>Berapakah index BMI anda?</h4>
         </div>
         <img src="assets/img/normal/06.png" alt="hasil_bmi">
@@ -122,5 +122,9 @@
       </div>
     </footer>
   </div>
+
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
