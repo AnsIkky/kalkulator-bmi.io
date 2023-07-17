@@ -241,8 +241,24 @@ form button[type=reset]:hover,
   text-align: center;
 }
 
+/* .resultDataText .resImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.resultData .resImg img {
+  width: 200px;
+}
+
 .resultData .resultDataText p {
   font-size: 3.5em;
+}
+
+#bmiResult {
+  padding: 20px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
 }
 /* RESULTINFO SEC. FINISH */
 
