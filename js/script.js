@@ -65,7 +65,7 @@ function bmiCalculation () {
     resH4.innerHTML = "Anda memiliki berat badan berlebih";
     resImg.innerHTML = `<img src="assets/img/normal/0${randomNum}.png" alt="hasil_bmi">`;
     bmiRes.style.backgroundColor = `#cfcf22`;
-    infoH3.innerHTML = 'Hasil BMI diantara 23 dan 29';
+    infoH3.innerHTML = 'Hasil BMI diantara 25 dan 29';
     infoPara[0].innerHTML = 'Anda berada dalam kategori overweight atau berat badan berlebih.';
     infoPara[1].innerHTML = 'Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalori makanan yang dikonsumsi dan berolahraga.';
     infoPara[2].innerHTML = 'Jika BMI anda berada dalam kategori ini maka Anda dianjurkan untuk menurunkan berat badan hingga batas normal.'
