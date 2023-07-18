@@ -102,7 +102,6 @@ function bmiCalculation () {
 }
 
 
-
 function bmiInfo() {
   if(bmiRes.innerHTML < 18.5) {
     infoH3.innerHTML = 'Hasil kurang dari 18,5';
@@ -136,4 +135,17 @@ function bmiInfo() {
     infoPara[1].innerHTML = 'Sama seperti kategori overweight (berat badan berlebih), anda dianjurkan untuk menurunkan berat badan.';
     infoPara[2].innerHTML = 'Mengatur pola makan dan olahraga menjadi beberapa solusi yang dianjurkan jika ingin mengatasi keadaan obesitas.';
   }
+}
+
+
+
+
+
+
+// MEMBUAT MENU POPUP
+const popUpBtn = document.querySelector(".popUp");
+const popUpBg = document.querySelector(".popUpBg");
+
+popUpBtn.onclick = () => {
+  popUpBg.classList.toggle('active');
 }

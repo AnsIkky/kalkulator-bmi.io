@@ -34,6 +34,7 @@ font-family: 'Rubik', sans-serif;
 }
 
 body {
+  position: relative;
   font-size: 1rem;
   font-family: 'Lora', serif;
   font-weight: bold;
@@ -390,4 +391,51 @@ footer {
   .button_container {
     flex-direction: column;
   }
+}
+
+
+
+
+
+/* Pop up button */
+.popUp {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 15px;
+  left: 15px;
+}
+
+.popUp img {
+  width: 100px;
+  z-index: 100;
+}
+
+.popUp img:hover{
+  cursor: pointer;
+}
+
+.popUp .popUpBg {
+  background-color: rgba(0, 0, 230, 0.1);
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin-top: -10px;
+  z-index: 90;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: .3s;
+}
+
+.popUp .popUpBg.active {
+  transform: scaleY(1);
+}
+
+.popUp .popUpBg img {
+  width: 50px;
 }
