@@ -252,13 +252,18 @@ form button[type=reset]:hover,
 }
 
 .resultData .resultDataText p {
-  font-size: 3.5em;
+  font-size: 3.4em;
 }
 
 #bmiResult {
   padding: 20px;
   border-radius: 50%;
   transition: background-color 0.3s ease;
+}
+
+.resultInfo h5 {
+  font-weight: bolder;
+  font-size: 1.1em;
 }
 /* RESULTINFO SEC. FINISH */
 
@@ -329,7 +334,8 @@ footer img:hover {
                   "header header"
                   "form result"
                   "info info"
-                  "foot foot"
+                  "foot foot";
+  grid-template-columns: 0.8fr 1fr;
 }
 
 header {
